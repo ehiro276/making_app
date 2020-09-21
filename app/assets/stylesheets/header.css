@@ -1,0 +1,24 @@
+.page-header{
+  height: 100px;
+  width: 100%;
+  border-bottom:solid 5px black;
+  display: flex;
+  justify-content: center;
+}
+
+.app-box{
+  background-color: cornsilk;
+  height: 90px;
+  width: 80%;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-name{
+ display: flex;
+ align-items: flex-end;
+ position: relative;
+ top: 20px;
+ right: 150px;
+}

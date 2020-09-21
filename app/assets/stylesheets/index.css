@@ -1,0 +1,61 @@
+.app-box{
+  align-items: center;
+  margin-top: 5px;
+}
+
+.header-title{
+  font-size: 50px;
+}
+
+.all-task-box{
+  height:85vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.working-task-box, .done-task-box{
+  background-color: white;
+  width: 48vw;
+  margin-top: 10px;
+}
+
+.title-box{
+  height: 60px;
+}
+
+.title{
+  height: 45px;
+  font-size: 40px;
+  background-color: darkgray;
+  display:inline-block
+}
+
+.maiking-task{
+  height: 40px;
+  width: 120px;
+  position: relative;
+  left: 150px;
+  bottom:7px;
+  font-size: large;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.working-tasks, .done-tasks{
+  background-color: rgb(148, 185, 219);
+  border-radius: 10px;
+  height: auto;
+  width: 100%;
+  padding: 5px 0;
+  padding-left: 0;
+}
+
+.task{
+  background-color: rgb(212, 211, 211);
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+}

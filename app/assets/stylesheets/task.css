@@ -1,0 +1,29 @@
+.task-form{
+  display: grid;
+  place-items: center;
+  padding-top: 10px;
+}
+
+.task-form-box{
+  background-color: rgb(223, 239, 255);
+  border-radius: 10px;
+  border: 2px solid black;
+  height: 600px;
+  width: 450px;
+}
+
+.weight-bold-text{
+  font-size: 20px;
+  font-weight: bold;
+  min-width: 170px;
+  margin: 10px 0;
+}
+
+.tasks-info{
+  width: 100%;
+  padding: 16px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: none;
+}
