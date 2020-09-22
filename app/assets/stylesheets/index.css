@@ -28,14 +28,14 @@
   height: 45px;
   font-size: 40px;
   background-color: darkgray;
-  display:inline-block
+  display:inline-block;
 }
 
 .maiking-task{
   height: 40px;
   width: 120px;
   position: relative;
-  left: 150px;
+  left: 80px;
   bottom:7px;
   font-size: large;
   font-weight: 600;
@@ -55,7 +55,12 @@
   background-color: rgb(212, 211, 211);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 20px;
   padding: 10px;
   margin: 10px;
+}
+
+.deadline{
+  white-space: nowrap
 }

@@ -1,5 +1,6 @@
 class TasksController < ApplicationController
   def index
+    @tasks = Task.all.order('created_at DESC')
   end
 
   def new
@@ -8,12 +9,17 @@ class TasksController < ApplicationController
 
   def create
     @task = Task.new(task_params)
-    if @item.save
+    if @task.save
       redirect_to root_path
     else
       render :new
     end
   end
 
+  private
+
+  def task_params
+    params.require(:task).permit(:name, :deadline, :notice, :importance_id, :done_id)
+  end
   
 end

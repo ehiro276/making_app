@@ -8,22 +8,12 @@
       </a>
     </div>
     <ul class='working-tasks'>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
+      <% @tasks.each do |task| %>
+        <li class='task'>
+          <%= task.name %>
+          <q class='deadline'>期限:<%= task.deadline %></q>
+        </li>
+      <% end %>
     </ul>
   </div>
   <div class='done-task-box'>
