@@ -1,4 +1,6 @@
 class TasksController < ApplicationController
+  before_action :task_find, only: [:edit, :update]
+  
   def index
     @tasks = Task.all.order('created_at DESC')
   end
@@ -17,7 +19,6 @@ class TasksController < ApplicationController
   end
 
   def edit
-    @task = Task.find(params[:id])
   end
 
   def update
@@ -32,6 +33,10 @@ class TasksController < ApplicationController
 
   def task_params
     params.require(:task).permit(:name, :deadline, :notice, :importance_id, :done_id)
+  end
+
+  def task_find
+    @task = Task.find(params[:id])
   end
   
 end
