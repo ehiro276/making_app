@@ -23,10 +23,13 @@
     重要性
     </div>
     <%= f.collection_select(:importance_id, Importance.all, :id, :name, {}, {class:"select-box"}) %>
+    <div class='weight-bold-text'>
+    仕事の状況
+    </div>
+    <%= f.collection_select(:done_id, Done.all, :id, :name, {}, {class:"select-box"}) %>
     <div class='but-box'>
-      <%# <%= f.submit "作成" ,class:"make-btn" %> %>
-      <%# <%= f.submit "終了" ,class:"done-btn" %> %>
-      <%# <%=link_to 'もどる', root_path, class:"back-btn" %> %>
+      <%= f.submit "作成" ,class:"make-btn" %>
+      <%=link_to 'もどる', root_path, class:"back-btn" %>
     </div>
     <% end %>
   </div>
