@@ -8,7 +8,7 @@
   background-color: rgb(223, 239, 255);
   border-radius: 10px;
   border: 2px solid black;
-  height: 600px;
+  height: 550px;
   width: 450px;
 }
 
@@ -16,14 +16,34 @@
   font-size: 20px;
   font-weight: bold;
   min-width: 170px;
+  padding-left: 10px;
   margin: 10px 0;
 }
 
 .tasks-info{
-  width: 100%;
-  padding: 16px 16px 8px;
-  border-radius: 4px;
+  height: 25px;
+  width: 80%;
+  padding: 10px 16px 8px;
+  margin: 20px;
+  border-radius: 5px;
   border: 1px solid #ccc;
   font-size: 16px;
   resize: none;
+}
+
+.task-date, .select-box{
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.but-box{
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.make-btn, .back-btn{
+  margin: 10px;
 }

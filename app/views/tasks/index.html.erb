@@ -3,25 +3,17 @@
   <div class='working-task-box'>
     <div class='title-box'>
       <h1 class='title'>作業中のタスク</h1>
-      <button class='maiking-task' type="button" name="name" value="value">仕事の登録</button>
+      <a href="/tasks/new">
+        <button class='maiking-task' type="button" name="name" value="value">仕事の登録</button>
+      </a>
     </div>
     <ul class='working-tasks'>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
-      <li class='task'>オリジナルアプリの作成<q class='deadline'>期限</q></li>
+      <% @tasks.each do |task| %>
+        <li class='task'>
+          <%= task.name %>
+          <q class='deadline'>期限:<%= task.deadline %></q>
+        </li>
+      <% end %>
     </ul>
   </div>
   <div class='done-task-box'>
