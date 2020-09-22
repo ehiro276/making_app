@@ -9,23 +9,21 @@
     </div>
     <ul class='working-tasks'>
       <% @tasks.each do |task| %>
-        <% if task.done_id == 1%>
-          <% if task.deadline + 7 >= Date.today %>
-            <%if (task.deadline - task.notice + 1) <= Date.today%>
-              <%= link_to edit_task_path(task.id) do %>
-                <li class='task' style="background-color:rgb(241, 131, 153)">
-                  <%= task.name %>
-                  <q class='deadline'>期限:<%= task.deadline %></q>
-                </li>
-              <% end %>
-            <%else%>
-              <%= link_to edit_task_path(task.id) do %>
-                <li class='task'>
-                  <%= task.name %>
-                  <q class='deadline'>期限:<%= task.deadline %></q>
-                </li>
-              <% end %>
-            <%end%>
+        <% if task.done_id == 1 && (task.deadline + 6) >= Date.today%>
+          <%if (task.deadline - task.notice + 1) <= Date.today%>
+            <%= link_to edit_task_path(task.id) do %>
+              <li class='task' style="background-color:rgb(241, 131, 153)">
+                <%= task.name %>
+                <q class='deadline'>期限:<%= task.deadline %></q>
+              </li>
+            <% end %>
+          <%else%>
+            <%= link_to edit_task_path(task.id) do %>
+              <li class='task'>
+                <%= task.name %>
+                <q class='deadline'>期限:<%= task.deadline %></q>
+              </li>
+            <% end %>
           <% end %>
         <% end %>
       <% end %>
@@ -37,14 +35,12 @@
     </div>
     <ul class='done-tasks'>
       <% @tasks.each do |task| %>
-        <% if task.done_id != 1%>
-          <% if task.deadline + 7 >= Date.today %>
-            <%= link_to edit_task_path(task.id) do %>
-              <li class='task'>
-                <%= task.name %>
-                <q class='deadline'>期限:<%= task.deadline %></q>
-              </li>
-            <% end %>
+        <% if task.done_id != 1 && (task.deadline + 7) >= Date.today%>
+          <%= link_to edit_task_path(task.id) do %>
+            <li class='task'>
+              <%= task.name %>
+              <q class='deadline'>期限:<%= task.deadline %></q>
+            </li>
           <% end %>
         <% end %>
       <% end %>
