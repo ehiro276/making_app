@@ -18,7 +18,7 @@
     <div class='weight-bold-text'>
     注意・警告(○日前)
     </div>
-    <%# f.collection_select(:importance_id, Importance.all, :id, :name, {}, {class:"select-box"}) %>
+    <%= f.collection_select(:notice, Notice.all, :id, :name, {}, {class:"select-box"}) %>
     <div class='weight-bold-text'>
     重要性
     </div>
