@@ -5,7 +5,7 @@
   </div>
   <div class='task-form-box'>
     
-    <%= form_with model:@task, local: true do |f| %>
+    <%= form_with url:edit_task_path, model:@task, local: true do |f| %>
       <div class='weight-bold-text'>
       作業名
       </div>
@@ -20,7 +20,7 @@
       </div>
       <%= f.collection_select(:notice, Notice.all, :id, :name, {}, {class:"select-box"}) %>
       <div class='weight-bold-text'>
-      重要性・優先度
+      重要度・優先度
       </div>
       <%= f.collection_select(:importance_id, Importance.all, :id, :name, {}, {class:"select-box"}) %>
       <div class='weight-bold-text'>
@@ -28,7 +28,7 @@
       </div>
       <%= f.collection_select(:done_id, Done.all, :id, :name, {}, {class:"select-box"}) %>
       <div class='but-box'>
-        <%= f.submit "作成" ,class:"make-btn" %>
+        <%= f.submit "変更" ,class:"make-btn" %>
         <%=link_to 'もどる', root_path, class:"back-btn" %>
       </div>
     <% end %>
