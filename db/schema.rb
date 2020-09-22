@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2020_09_21_084503) do
     t.date "deadline", null: false
     t.integer "notice", null: false
     t.integer "importance_id", null: false
+    t.integer "done_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
