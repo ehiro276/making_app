@@ -18,11 +18,11 @@
     <div class='weight-bold-text'>
     注意・警告(○日前)
     </div>
-    <%# <%= f.text_area :caution, class:"tasks-info", id:"task-caution", placeholder:"商品名（必須 40文字まで)", maxlength:"40" %> %>
+    <%# f.collection_select(:importance_id, Importance.all, :id, :name, {}, {class:"select-box"}) %>
     <div class='weight-bold-text'>
     重要性
     </div>
-    <%# <%= f.text_area :importance, class:"tasks-info", id:"task-importance", placeholder:"商品名（必須 40文字まで)", maxlength:"40" %> %>
+    <%= f.collection_select(:importance_id, Importance.all, :id, :name, {}, {class:"select-box"}) %>
     <div class='but-box'>
       <%# <%= f.submit "作成" ,class:"make-btn" %> %>
       <%# <%= f.submit "終了" ,class:"done-btn" %> %>
