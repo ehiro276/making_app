@@ -13,7 +13,8 @@
     <div class='weight-bold-text'>
     期限
     </div>
-    <%= f.text_area :deadline, class:"tasks-info", id:"task-deadline", placeholder:"商品名（必須 40文字まで)", maxlength:"40" %>
+    <%= f.date_field :deadline, class:"task-date" %>
+    <b>◀︎マークをクリックして入力</b>
     <div class='weight-bold-text'>
     注意・警告(○日前)
     </div>
