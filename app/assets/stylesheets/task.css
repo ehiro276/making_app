@@ -8,7 +8,7 @@
   background-color: rgb(223, 239, 255);
   border-radius: 10px;
   border: 2px solid black;
-  height: 600px;
+  height: 550px;
   width: 450px;
 }
 
@@ -36,3 +36,14 @@
   margin-left: 10px;
 }
 
+.but-box{
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.make-btn, .back-btn{
+  margin: 10px;
+}
