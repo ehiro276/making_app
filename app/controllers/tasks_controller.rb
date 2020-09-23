@@ -30,11 +30,11 @@ class TasksController < ApplicationController
   end
 
   def destroy
-  if @task.destroy
-    redirect_to root_path
-  else
-    render :edit
-  end
+    if @task.destroy
+      redirect_to root_path
+    else
+      render :edit
+    end
   end
 
   private
