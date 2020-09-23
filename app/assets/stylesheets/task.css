@@ -44,6 +44,28 @@
   align-items: center;
 }
 
-.make-btn, .back-btn{
+.make-btn, .back-btn, .task-destroy{
   margin: 10px;
+  cursor: pointer;
+}
+
+.make-btn, .task-destroy{
+  height: auto;
+  width: auto;
+  font-size: 20pt;
+}
+
+.task-destroy{
+  border-radius: 10%;
+  font-weight: bold;
+  padding       : 7px;
+  background    : #ca3939;
+  color         : #ffffff;
+  border        : 2px solid #000066;
+}
+
+.task-destroy:hover {
+  box-shadow: none;
+  color: #ca3939;
+  background: #ffffff;
 }

@@ -29,6 +29,9 @@
       <%= f.collection_select(:done_id, Done.all, :id, :name, {}, {class:"select-box"}) %>
       <div class='but-box'>
         <%= f.submit "変更" ,class:"make-btn" %>
+        <%= link_to '削除', task_path, method: :delete, class:'task-destroy' %>
+      </div>
+      <div class='but-box'>
         <%=link_to 'もどる', root_path, class:"back-btn" %>
       </div>
     <% end %>
