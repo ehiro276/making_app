@@ -1,3 +1,16 @@
+# テーブル設計
+
+## tasks テーブル
+
+| Column        | Type   | Options     |
+| ------------- | ------ | ----------- |
+| name          | string | null: false |
+| deadline      | date   | null: false |
+| notice        | string | null: false |
+| importance_id | string | null: false |
+| done_id       | string | null: false |
+
+
 # README
 
 This README would normally document whatever steps are necessary to get the
