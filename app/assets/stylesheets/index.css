@@ -70,12 +70,8 @@
   margin: 10px;
 }
 
-.task:hover {
+.task:hover, .task-params:hover{
   box-shadow: none;
   color: #ca3939;
   background: #ffffff;
-}
-
-.column{
-  white-space: nowrap
 }
