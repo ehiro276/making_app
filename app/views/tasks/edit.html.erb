@@ -32,7 +32,7 @@
         <%= link_to '削除', task_path, method: :delete, class:'task-destroy' %>
       </div>
       <div class='but-box'>
-        <%=link_to 'もどる', root_path, class:"back-btn" %>
+        <%=link_to 'もどる', "javascript:history.back();", class:"back-btn" %>
       </div>
     <% end %>
   </div>

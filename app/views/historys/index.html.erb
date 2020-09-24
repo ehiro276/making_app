@@ -1,0 +1,27 @@
+<%= render "shared/header" %>
+<div class='all-task-box'>
+  <div class='task-history-box'>
+    <div class='history-title-box'>
+      <h1 class='title'>タスク履歴</h1>
+      <a href="javascript:history.back();">
+        <button class='maiking-task' type="button" name="name" value="value">戻る</button>
+      </a>
+    </div>
+    <ul class='task-historys'>
+      <% @tasks.each do |task| %>
+        <% if task.done_id == 1 && (task.deadline + 6) < Date.today%>
+          <%= link_to edit_task_path(task.id) do %>
+            <li class='task-params'>
+              <div>
+                <%= task.name %>
+              </div>
+              <div>
+                <q class='column'>期限:<%= task.deadline %></q>
+              </div>
+            </li>
+          <% end %>
+        <% end %>
+      <% end %>
+    </ul>
+  </div>
+</div>

@@ -20,8 +20,12 @@
   margin-top: 10px;
 }
 
-.title-box{
+.title-box, .history-title-box{
   height: 60px;
+}
+
+.history-title-box{
+  padding-top: 10px;
 }
 
 .title{
@@ -42,7 +46,7 @@
   margin: 10px;
 }
 
-.working-tasks, .done-tasks{
+.working-tasks, .done-tasks, .task-historys{
   background-color: rgb(148, 185, 219);
   border-radius: 10px;
   height: auto;
@@ -51,7 +55,11 @@
   padding-left: 0;
 }
 
-.task{
+.task-history-box{
+  width: 97%;
+}
+
+.task, .task-params{
   background-color: rgb(212, 211, 211);
   color: black;
   display: flex;
@@ -62,6 +70,6 @@
   margin: 10px;
 }
 
-.deadline{
+.column{
   white-space: nowrap
 }
