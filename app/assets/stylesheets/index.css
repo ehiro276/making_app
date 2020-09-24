@@ -70,6 +70,12 @@
   margin: 10px;
 }
 
+.task:hover {
+  box-shadow: none;
+  color: #ca3939;
+  background: #ffffff;
+}
+
 .column{
   white-space: nowrap
 }
