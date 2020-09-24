@@ -9,7 +9,7 @@
     </div>
     <ul class='task-historys'>
       <% @tasks.each do |task| %>
-        <% if task.done_id == 1 && (task.deadline + 6) < Date.today%>
+        <% if task.deadline + 6 < Date.today%>
           <%= link_to edit_task_path(task.id) do %>
             <li class='task-params'>
               <div>
