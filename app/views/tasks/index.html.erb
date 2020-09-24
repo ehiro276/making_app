@@ -9,7 +9,7 @@
     </div>
     <ul class='working-tasks'>
       <% @tasks.each do |task| %>
-        <% if task.done_id == 1 && (task.deadline + 6) >= Date.today%>
+        <% if task.done_id == 1 && (task.deadline + 7) >= Date.today%>
           <%if (task.deadline - task.notice + 1) <= Date.today%>
             <%= link_to edit_task_path(task.id) do %>
               <li class='task' style="background-color:rgb(241, 131, 153)">
